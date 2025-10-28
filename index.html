@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luminous Pillows - Almohadas con Luz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="sticky">
+    <h1>Luminous Pillows 🛏️</h1>
+    <nav>
+      <button onclick="mostrarSeccion('inicio')">Inicio</button>
+      <button onclick="mostrarSeccion('productos')">Productos</button>
+      <button onclick="mostrarSeccion('propuesta')">Propuesta de Valor</button>
+      <button onclick="mostrarSeccion('contacto')">Contacto</button>
+      <span id="contador-carrito">🛒 0</span>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="activo">
+      <h2>Funcionalidad</h2>
+      <p>Es una almohada que brinda una luz nocturna para la comodidad del niño al dormir en su nueva etapa de independencia, además el producto sirve para decorar y ser obsequiado a las personas especiales.</p>
+
+      <h2>Innovación</h2>
+      <p>La innovación de este emprendimiento se basó en las características de la competencia, lo que nos permitió reinventar nuestro producto ofreciendo gran variedad.</p>
+
+
+      <h2>Objetivo</h2>
+      <p><strong>General:</strong> Contar con personal altamente calificado, con un alto nivel de creatividad y responsabilidad para nuestro producto, ofreciendo la mejor atención a nuestros clientes.</p>
+      <p><strong>Especificos:</strong></p>
+      <ul>
+        <li>Ofrecer productos de alta calidad satisfaciendo la necesidad del cliente.</li>
+        <li>Contar con los mejores proveedores de insumos para ofrecer mejor calidad en nuestro producto.</li>
+      </ul>
+
+      <h2>Misión</h2>
+      <p>Luminous Pillows ofrece su producto para niñ@s que tienen la necesidad de adquirirlo por sus temores, fomentando la seguridad y tranquilidad al dormir y/o estar solos. Adicionalmente, es un producto que puede ser adquirido para regalo.</p>
+
+      <h2>Visión</h2>
+      <p>Convertirnos en una referencia de fabricación de almohadas innovadoras con calidad para lograr la satisfacción del consumidor.</p>
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="productos">
+      <h2>Nuestros Productos</h2>
+      <div class="slider">
+        <img src="Images/Almohada1.jpg" alt="Almohada 1" class="slide">
+        <img src="Images/Almohada2.jpg" alt="Almohada 2" class="slide">
+        <img src="Images/Almohada3.jpg" alt="Almohada 3" class="slide">
+        <img src="Images/Almohada4.jpg" alt="Almohada 4" class="slide">
+        <img src="Images/Almohada5.jpg" alt="Almohada 5" class="slide">
+        <img src="Images/Almohada6.jpg" alt="Almohada 6" class="slide">
+      </div>
+
+      <div class="galeria">
+        <div class="producto">
+          <img src="Images/Almohada1.jpg" alt="Almohada 1">
+          <button onclick="agregarCarrito()">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="Images/Almohada2.jpg" alt="Almohada 2">
+          <button onclick="agregarCarrito()">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="Images/Almohada3.jpg" alt="Almohada 3">
+          <button onclick="agregarCarrito()">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="Images/Almohada4.jpg" alt="Almohada 4">
+          <button onclick="agregarCarrito()">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="Images/Almohada5.jpg" alt="Almohada 5">
+          <button onclick="agregarCarrito()">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="Images/Almohada6.jpg" alt="Almohada 6">
+          <button onclick="agregarCarrito()">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Propuesta de Valor -->
+    <section id="propuesta">
+      <h2>Propuesta de Valor</h2>
+      <p>Una propuesta de valor innovadora y única que garantiza confort, seguridad y un regalo especial.</p>
+      <img src="Images/Propuestadevalor.jpg" alt="Propuesta de Valor" class="valor-img">
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <input type="email" id="correo" placeholder="Tu correo aquí">
+      <button onclick="enviarCorreo()">Enviar</button>
+      <p id="mensaje"></p>
+      <p>Síguenos en Instagram: 
+        <a href="https://www.instagram.com/almohadas_luz" target="_blank">@almohadas_luz</a>
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Luminous Pillows. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
